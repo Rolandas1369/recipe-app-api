@@ -6,3 +6,4 @@ create docker-compose.yml
 terminal sudo docker-compose build
 sudo docker-compose run app sh -c "django-admin.py startproject app ."
 enabling project in travis ci
+added file .travis.yml
