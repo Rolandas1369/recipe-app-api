@@ -1,0 +1,6 @@
+git clone
+Add Dockerfile
+Add requirements.txt file
+terminal on Dockerfile docker build .
+create docker-compose.yml
+terminal sudo docker-compose build
