@@ -4,3 +4,5 @@ Add requirements.txt file
 terminal on Dockerfile docker build .
 create docker-compose.yml
 terminal sudo docker-compose build
+sudo docker-compose run app sh -c "django-admin.py startproject app ."
+enabling project in travis ci
