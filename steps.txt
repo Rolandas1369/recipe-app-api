@@ -1,3 +1,4 @@
+konfiguracija
 git clone
 Add Dockerfile
 Add requirements.txt file
@@ -7,3 +8,31 @@ terminal sudo docker-compose build
 sudo docker-compose run app sh -c "django-admin.py startproject app ."
 enabling project in travis ci
 added file .travis.yml
+calc.py
+add test.py
+sudo docker-compose run app sh -c "python manage.py test"
+sudo docker-compose run app sh -c "python manage.py test && flake8"
+jei ner kazkokiu moduliu sudo docker-compose build
+testtuos funkcojas kurios prasideda test_
+ir ieskos failu kurie vadinasi tests.py
+
+added core app
+sudo docker-compose run app sh -c "python manage.py startapp core"
+removed test.py and views.py from core app
+added app to setting
+in tests folders test_models.py
+after def test_create_user_with_email_successfull(self): creted
+sudo docker-compose run app sh -c "python manage.py test"
+added models to core models
+added setting
+AUTH_USER_MODEL = 'core.User'
+sudo docker-compose run app sh -c "python manage.py makemigrations core"
+added def test_new_user_email_normalized(self):
+tested
+added check in models
+if not email:
+    raise ValueError("Users must have emails")
+
+added def test_create_new_superuser(self):
+added function to models
+def create_superuser(self, email, password):
