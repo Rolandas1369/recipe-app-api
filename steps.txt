@@ -36,3 +36,21 @@ if not email:
 added def test_create_new_superuser(self):
 added function to models
 def create_superuser(self, email, password):
+
+added tests file test_admin.py and
+admin.py UserAdmin
+
+added db to docker-compose
+added psycorb to requirements
+
+changed dockerfile
+COPY ./requirements.txt /requirements.txt
+RUN apk add --update --no-cache postgresql-client
+RUN apk add --update --no-cache --virtual .tmp-build-deps \
+      gcc libc-dev linux-headers postgresql-dev
+RUN pip install -r /requirements.txt
+RUN apk del .tmp-build-deps
+
+docker-compose build
+
+added management/commands wait for db
