@@ -56,3 +56,8 @@ docker-compose build
 added management/commands wait for db
 
 adde app sudo docker-compose run --rm app sh -c "python manage.py startapp user"
+
+test useriui public poto Private
+serializeriai, viewsai
+
+baigoau 11 folderi
