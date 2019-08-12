@@ -60,4 +60,17 @@ adde app sudo docker-compose run --rm app sh -c "python manage.py startapp user"
 test useriui public poto Private
 serializeriai, viewsai
 
-baigoau 11 folderi
+added test_ingridients_api
+ingridient serializer
+model for ingridinet
+urls
+
+13 4 dalis
+
+pradejau 13 folderi
+
+sudo docker-compose up pradeda sewrva
+
+refactoeing tagviewset and ingriedinstvieset into base recipeattr
+
+14 2
